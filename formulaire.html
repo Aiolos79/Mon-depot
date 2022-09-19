@@ -9,44 +9,45 @@
 <body>
     <form>
         <ol>
-            <li><label>Prénom&nbsp;:</label><input type="text"></li>
-            <li><label>Nom&nbsp;:</label><input type="text"></li>
-            <li><label>Age&nbsp;:</label><input type="number"></li>
+            <li><label>Prénom&nbsp;:<input type="text" required></label></li>
+            <li><label>Nom&nbsp;:<input type="text" required></label></li>
+            <li><label>Age&nbsp;:<input type="number" required></label></li>
             <li><label>Sexe&nbsp;:</label>
-                <INPUT TYPE="radio" NAME= "Sexe" VALUE="Masculin" CHECKED>Masculin
-                <INPUT TYPE="radio" NAME= "Sexe" VALUE="Féminin">Féminin
-                <INPUT TYPE="radio" NAME= "Sexe" VALUE="Autre">Autre</li>
-            <li><label>Adresse Mail&nbsp;:</label><input type="email"></li>
-            <li><label>Adresse postale&nbsp;:</label><input type="text"></li>
-            <li><label>Code postal&nbsp;:</label><input type="number"></li>
-            <li><label>Ville&nbsp;:</label><input type="text"></li>
-            <li><label>Métier exercé&nbsp;:</label>
+                <INPUT TYPE="radio" NAME="Sexe" VALUE="Masculin" CHECKED>Masculin
+                <INPUT TYPE="radio" NAME="Sexe" VALUE="Féminin">Féminin
+                <INPUT TYPE="radio" NAME="Sexe" VALUE="Autre">Autre</li>
+            <li><label>Adresse Mail&nbsp;:<input type="email" required></label></li>
+            <li><label>Adresse postale&nbsp;:<input type="text" required></label></li>
+            <li><label>Code postal&nbsp;:<input type="text" maxlength="5" pattern="[0-9]{5}" required></label></li>
+            <li><label>Ville&nbsp;:<input type="text" required></label></li>
+            <li><label>Métier exercé&nbsp;:
                 <select name="Métier">
                     <option value="Cadre">Cadre</option>
                     <option value="Ouvrier">Ouvrier</option>
                     <option value="Profession libérale">Profession libérale</option>
-                </select></li>
-            <li><label>Nationalité&nbsp;:</label>
+                    <option value="Employé">Employé</option>
+                </select></label></li>
+            <li><label>Nationalité&nbsp;:
                 <select name="Nationalite">
-                    <option value="Francaise">Française</option>
+                    <option value="Francaise" selected>Française</option>
                     <option value="Belge">Belge</option>
                     <option value="Allemande">Allemande</option>
                     <option value="Algerienne">Algérienne</option>
-                </select></li>
-            <li><label>Date de naissance&nbsp;:</label><input type="date"></li>
-            <li><label>Pays de naissance&nbsp;:</label>
+                </select></label></li>
+            <li><label>Date de naissance&nbsp;:<input type="date" required></label></li>
+            <li><label>Pays de naissance&nbsp;:
                 <select name="Pays de naissance">
-                    <option value="France">France</option>
+                    <option value="France" selected>France</option>
                     <option value="Belgique">Belgique</option>
                     <option value="Allemagne">Allemagne</option>
                     <option value="Algerie">Algérie</option>
-                </select></li>
-            <li><label>Numéro de sécurité sociale&nbsp;:</label><input type="number"></li>
-            <li><label>Numéro de passeport&nbsp;:</label><input type="number"></li>
-            <li><label>Date de déliverance du passeport&nbsp;:</label><input type="date"></li>
-            <li><label>Date de validité du passeport&nbsp;:</label><input type="date"></li>
+                </select></label></li>
+            <li><label>Numéro de sécurité sociale&nbsp;:<input type="text" maxlength="15" pattern="[0-9]{15}" required></label></li>
+            <li><label>Numéro de passeport&nbsp;:<input type="text" maxlength="11" pattern="[0-9]{2} [A-Z]{2} [0-9]{5}" placeholder="ex:00 AA 00000" required></label></li>
+            <li><label>Date de déliverance du passeport&nbsp;:<input type="date" required></label></li>
+            <li><label>Date de validité du passeport&nbsp;:<input type="date" required></label></li>
         </ol>
-        <INPUT TYPE="Button" VALUE="Envoyer">
+        <INPUT TYPE="submit" VALUE="Envoyer">
     </form>
 </body>
 </html>
